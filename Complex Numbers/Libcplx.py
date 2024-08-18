@@ -24,22 +24,21 @@ def moduloC(a,b):
     return round(modulo,1)
     
 def conjugadoC(a,b):
-    b=b*-1
-    return (a,b)
+    return (a,-b)
 
 def polarC(a,b):
     magn=math.sqrt(a**2+b**2)
-    phase=round(math.atan(b/a),1)
-    return (magn,phase)
+    fase=round(math.atan2(b,a),1)
+    return (magn,fase)
 
 def cartesianoC(a,b):
     x=round(a * math.cos(b))
     y=round(a * math.sin(b))
     return(x,y)
 
-def phaseC(a,b):
-    phase=math.atan(b/a)
-    return phase
+def faseC(a,b):
+    fase=math.atan2(b,a)
+    return fase
 
 def prettyPrintingC(partReal,partImag):
     if partImag<0:
@@ -57,4 +56,8 @@ if __name__ == '__main__':
     prettyPrintingC(partReal,partImag)
     partReal,partImag=restaC((3,2.8),(1.5,-2))
     prettyPrintingC(partReal,partImag)
-    print(moduloC(4,3))
+    print(moduloC(5,2))
+    print(conjugadoC(5,-2))
+    print(polarC(5,2))
+    print(cartesianoC(5,0.6))
+    print(faseC(5,2))
