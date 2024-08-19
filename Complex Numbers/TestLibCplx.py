@@ -1,4 +1,4 @@
-import Libcplx as lc
+import LibCplx as lc
 import unittest
 
 class TestCplxOperations(unittest.TestCase):

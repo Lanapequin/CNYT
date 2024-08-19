@@ -19,25 +19,25 @@ def restaC(a,b):
     partImag=round(a[1]-b[1], 1)
     return (partReal,partImag)
 
-def moduloC(a,b):
-    modulo=math.sqrt(a**2+b**2)
+def moduloC(partReal,partImag):
+    modulo=math.sqrt(partReal**2+partImag**2)
     return round(modulo,1)
     
-def conjugadoC(a,b):
-    return (a,-b)
+def conjugadoC(partReal,partImag):
+    return (partReal,-partImag)
 
-def polarC(a,b):
-    magn=math.sqrt(a**2+b**2)
-    fase=round(math.atan2(b,a),1)
+def polarC(partReal,partImag):
+    magn=math.sqrt(partReal**2+partImag**2)
+    fase=round(math.atan2(partImag,partReal),1)
     return (magn,fase)
 
-def cartesianoC(a,b):
-    x=round(a * math.cos(b))
-    y=round(a * math.sin(b))
+def cartesianoC(magn,fase):
+    x=round(magn * math.cos(fase))
+    y=round(magn * math.sin(fase))
     return(x,y)
 
-def faseC(a,b):
-    fase=math.atan2(b,a)
+def faseC(partReal,partImag):
+    fase=math.atan2(partImag,partReal)
     return fase
 
 def prettyPrintingC(partReal,partImag):
