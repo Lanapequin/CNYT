@@ -57,18 +57,3 @@ def prettyPrintingC(partReal,partImag):
     else:
         print(partReal,'+',partImag,'i')
 
-
-if __name__ == '__main__':
-    partReal,partImag=sumaC((3,2.8),(1.5,-2))
-    prettyPrintingC(partReal,partImag)
-    partReal,partImag=multC((3,2.8),(1.5,-2))   
-    prettyPrintingC(partReal,partImag)
-    partReal,partImag=divC((3,2.8),(1.5,-2))
-    prettyPrintingC(partReal,partImag)
-    partReal,partImag=restaC((3,2.8),(1.5,-2))
-    prettyPrintingC(partReal,partImag)
-    print(moduloC(5,2))
-    print(conjugadoC(5,-2))
-    print(polarC(5,2))
-    print(cartesianoC(5,0.6))
-    print(faseC(5,2))
