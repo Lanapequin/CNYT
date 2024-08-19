@@ -2,7 +2,7 @@ import LibCplx as lc
 import unittest
 
 class TestCplxOperations(unittest.TestCase):
-    #PRUEBAS SUMA DE NUMEROS COMPLEJOS
+    # PRUEBAS SUMA DE NUMEROS COMPLEJOS
     def test_cplxsum(self):
         suma= lc.sumaC((3,2.8),(1.5,-2))
         self.assertAlmostEqual(suma[0], 4.5)
@@ -13,7 +13,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(suma[0], 8)
         self.assertAlmostEqual(suma[1], 9)
 
-    #PRUEBAS MULTIPLICACION DE NUMEROS COMPLEJOS
+    # PRUEBAS MULTIPLICACION DE NUMEROS COMPLEJOS
     def test_cplxmult(self):
         mult= lc.multC((3,2.8),(1.5,-2))
         self.assertAlmostEqual(mult[0], 10.1)
@@ -24,7 +24,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(mult[0], 1)
         self.assertAlmostEqual(mult[1], 41)
     
-    #PRUEBAS DIVISION DE NUMEROS COMPLEJOS
+    # PRUEBAS DIVISION DE NUMEROS COMPLEJOS
     def test_cplxdiv(self):
         div= lc.divC((3,2.8),(1.5,-2))
         self.assertAlmostEqual(div[0], -0.2)
@@ -35,7 +35,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(div[0], 1)
         self.assertAlmostEqual(div[1], 1)
     
-    #PRUEBAS RESTA DE NUMEROS COMPLEJOS
+    # PRUEBAS RESTA DE NUMEROS COMPLEJOS
     def test_cplxresta(self):
         resta= lc.restaC((3,2.8),(1.5,-2))
         self.assertAlmostEqual(resta[0], 1.5)
@@ -46,7 +46,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(resta[0], -2)
         self.assertAlmostEqual(resta[1], 5)
     
-    #PRUEBAS MODULO DE UN NUMERO COMPLEJO
+    # PRUEBAS MODULO DE UN NUMERO COMPLEJO
     def test_cplxmodulo(self):
         modulo= lc.moduloC(4,3)
         self.assertAlmostEqual(modulo, 5)
@@ -55,7 +55,7 @@ class TestCplxOperations(unittest.TestCase):
         modulo= lc.moduloC(5,2)
         self.assertAlmostEqual(modulo, 5.4)
     
-    #PRUEBAS CONJUGADO DE UN NUMERO COMPLEJO
+    # PRUEBAS CONJUGADO DE UN NUMERO COMPLEJO
     def test_clpxconjugado(self):
         conj=lc.conjugadoC(4,3)
         self.assertAlmostEqual(conj[0], 4)
@@ -66,7 +66,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(conj[0], 5)
         self.assertAlmostEqual(conj[1], 2)
     
-    #PRUEBAS VALORES CARTESIANOS A POLARES
+    # PRUEBAS VALORES CARTESIANOS A POLARES
     def test_clpxpolar(self):
         polar=lc.polarC(4,3)
         self.assertAlmostEqual(polar[0], 5)
@@ -77,7 +77,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(polar[0], 5.3851648071)
         self.assertAlmostEqual(polar[1], 0.4)
      
-    #PRUEBAS VALORES POLARES A CARTESIANOS
+    # PRUEBAS VALORES POLARES A CARTESIANOS
     def test_clpxcartesiana(self):
         cart=lc.cartesianoC(5,0.644)
         self.assertAlmostEqual(cart[0], 4)
@@ -88,7 +88,7 @@ class TestCplxOperations(unittest.TestCase):
         self.assertAlmostEqual(cart[0], 5)
         self.assertAlmostEqual(cart[1], 2)
     
-    #PRUEBAS DE LA FASE DE UN NUMERO COMPLEJO
+    # PRUEBAS DE LA FASE DE UN NUMERO COMPLEJO
     def test_clpxfase(self):
         fase=lc.faseC(4,3)
         self.assertAlmostEqual(fase, 0.6435011)
