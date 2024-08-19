@@ -12,17 +12,20 @@ Es necesario tener instalado [Python 3.8](https://www.python.org/)
 
 ![alt text](image-1.png)
 
-<p>Para ejecutar cada funcion por tu cuenta solo necesitas pegar el siguiente codigo en LibCplx.py y correrlo</p>
+Para ejecutar cada funcion por tu cuenta solo necesitas pegar el siguiente codigo en LibCplx.py, donde __a__ es un número complejo que se debe representar en forma de pares ordenados, **b** se debe representar de la misma manera.</p>
+
 
 ```python
 if __name__ == '__main__':
-    partReal,partImag=sumaC((3,2.8),(1.5,-2))
+    a=(3,2.8)
+    b=(1.5,-2)
+    partReal,partImag=sumaC(a,b)
     prettyPrintingC(partReal,partImag)
-    partReal,partImag=multC((3,2.8),(1.5,-2))   
+    partReal,partImag=multC(a,b)  
     prettyPrintingC(partReal,partImag)
-    partReal,partImag=divC((3,2.8),(1.5,-2))
+    partReal,partImag=divC(a,b)
     prettyPrintingC(partReal,partImag)
-    partReal,partImag=restaC((3,2.8),(1.5,-2))
+    partReal,partImag=restaC(a,b)
     prettyPrintingC(partReal,partImag)
     print(moduloC(5,2))
     print(conjugadoC(5,-2))
