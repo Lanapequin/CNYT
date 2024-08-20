@@ -5,14 +5,14 @@
 Esta librería está diseñada para manejar números complejos, que son fundamentales en la computación cuántica, encontrarás herramientas para realizar operaciones básicas con números complejos, como suma, resta, multiplicación y división, así como funciones para calcular el conjugado, el módulo, conversión entre representaciones polar y cartesiano, en los dos sentidos y la fase de un número complejo.
 #### Prerrequisitos
 Es necesario tener instalado [Python 3.8](https://www.python.org/)
-<p>Para ejecutar las pruebas automaticas es necesario descargar TestLibCplx.py y LibCplx.py, ambos archivos deben estar en una misma carpeta para que se puedan ejecutar las pruebas</p>
+<p>Para ejecutar las pruebas automaticas es necesario descargar TestLibCplx.py y LibreriaCplx.py, ambos archivos deben estar en una misma carpeta para que se puedan ejecutar las pruebas</p>
 
 #### Ejecutando las pruebas
 <p>Para ejecutar las pruebas automaticas se debe abrir el archivo TestLibCplx.py y correrlo.</p>
 
 ![alt text](image-1.png)
 
-Para ejecutar cada funcion por tu cuenta solo necesitas pegar el siguiente codigo en LibCplx.py, donde __a__ es un número complejo que se debe representar en forma de pares ordenados, **b** se debe representar de la misma manera.</p>
+Para ejecutar cada funcion por tu cuenta solo necesitas pegar el siguiente codigo en LibreriaCplx.py, donde __a__ es un número complejo que se debe representar en forma de pares ordenados, **b** se debe representar de la misma manera.</p>
 
 
 ```python
