@@ -1,13 +1,13 @@
 # CNYT 2024-2
-## PRIMER CORTE
-### Libreria de números complejos
-#### Descripción
+# Números complejos
+## Libreria de números complejos
+### Descripción
 Esta librería está diseñada para manejar números complejos, que son fundamentales en la computación cuántica, encontrarás herramientas para realizar operaciones básicas con números complejos, como suma, resta, multiplicación y división, así como funciones para calcular el conjugado, el módulo, conversión entre representaciones polar y cartesiano, en los dos sentidos y la fase de un número complejo.
-#### Prerrequisitos
+### Prerrequisitos
 Es necesario tener instalado [Python 3.8](https://www.python.org/)
 <p>Para ejecutar las pruebas automaticas es necesario descargar TestLibCplx.py y LibreriaCplx.py, ambos archivos deben estar en una misma carpeta para que se puedan ejecutar las pruebas</p>
 
-#### Ejecutando las pruebas
+### Ejecutando las pruebas
 <p>Para ejecutar las pruebas automaticas se debe abrir el archivo TestLibCplx.py y correrlo.</p>
 
 ![alt text](image-1.png)
@@ -36,7 +36,32 @@ if __name__ == '__main__':
 
 <p>Puedes usar las funciones que desees y modificar los valores de acuerdo a tus necesidades.</p>
 
-#### Construido con
+## Espacios vectoriales complejos
+### Descripción
+Esta carpeta contiene cuatro talleres, los cuales fueron asignados con el fin de aprender y practicar diferentes operaciones que se pueden aplicar a los vectores y matrices en el mundo de los números complejos, algunos de los temas que se tocan en los talleres son:
+
+- Operaciones basicas entre números complejos.
+- Suma, resta, multiplicación y division de vectores y matrices complejas.
+- Calculo de valores y vectores propios de una matriz.
+- Calculo del producto interno entre dos vectores o matrices.
+- Matrices Hermitianas y unitarias.
+- Producto tensor en vectores y matrices
+
+### Prerrequisitos
+Antes de empezar, debes asegúrate de tener instalado el entorno virtual:
+- En **Windows**:
+  ```bash
+  .venv\Scripts\activate
+- Con el entorno virtual activado, puedes instalar una biblioteca usando pip install, seguido por el nombre de la biblioteca que se desea instalar:
+  ``` 
+    pip install numpy 
+  ``` 
+- Una vez instalada, puedes comenzar a usar la biblioteca en tu archivo:
+  ``` 
+    import numpy as np
+  ``` 
+
+### Construido con
 Este proyecto fue construido con [Python 3.8](https://www.python.org/)
-#### Colaboradores
+### Colaboradores
 Laura Natalia Perilla Quintero [Lanapequin](https://github.com/Lanapequin)
