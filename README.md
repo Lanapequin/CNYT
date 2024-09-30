@@ -61,6 +61,21 @@ Antes de empezar, debes asegúrate de tener instalado el entorno virtual:
     import numpy as np
   ``` 
 
+## De lo clásico a lo cuantico
+### Descripción
+Este taller está diseñado para explorar y simular el experimento de la doble rendija, que revela la dualidad onda-partícula de la luz y la interferencia de ondas. A través de varios ejercicios, modelamos el comportamiento de la luz al pasar por dos rendijas, en donde calculamos las probabilidades de cada estado, con el fin de observar los patrones de interferencia.
+### Prerrequisitos
+
+Para ejecutar el código, asegúrate de tener instalados los siguientes paquetes:
+
+- NumPy
+- Matplotlib
+
+Puedes instalar las dependencias necesarias utilizando pip:
+
+```bash
+pip install numpy matplotlib
+```
 ### Construido con
 Este proyecto fue construido con [Python 3.8](https://www.python.org/)
 ### Colaboradores
